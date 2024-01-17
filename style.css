@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --Ff-main: 'Roboto', sans-serif;
+    --BodyBackground: #000;
+    --ElementsBackground: #06181C;
+    font-size: 62.5%;
+}
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--Ff-main);
+    font-weight: 700;
+    background-color: var(--BodyBackground);
+    margin: 0 auto;
+}
+
+#app {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 131px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .SearchField{
+    display: flex;
+    gap: 10px;
+}
+.SearchField #inputUsername{
+    width: 436px;
+    border: none;
+    padding: 1.6rem;
+    border-radius: 5px;
+    background: var(--ElementsBackground);
+    color: white;
+
+}
+#inputUsername::placeholder{
+    font-size: 1.6rem;
+}
+
+.SearchField #AddFavorite{
+    min-width: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 5px;
+    background:  #065E7C;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+table{
+    margin-top: 87px;
+    background: #092D38;
+    color: #E1E1E6;
+    border-radius: 5px;
+    width: 1120px;
+    text-align: justify;
+    font-size: 2rem;
+
+}
+thead td{
+    padding: 16px 24px 16px 40px;
+    background: #092D38;
+    text-align: justify;
+    
+}
+
+ tbody > tr:nth-child(odd) {
+    background-color: #040c0e; 
+
+  }
+  
+  
+ tbody > tr:nth-child(even) {
+    background-color:#06161B80;
+  }
+  
+tbody img{
+    width: 56px;
+    height: 56px;
+    border-radius: 56px
+
+}
+tbody tr{
+    padding: 16px 24px 16px 40px;
+    height: 104px;
+    
+    
+}
+tbody td{
+    padding: 16px 24px 16px 40px;
+    background: rgba(6, 22, 27, 0.50);
+    height: 104px;
+    
+}
+
+
+tbody td a {
+  
+   font-weight: 400;
+   color: #E1E1E6;
+
+}
+
+tbody td > button{
+  
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    color:#F75A68;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+
+tbody .Inf-username {
+    display: flex;
+    gap: 1.6rem;
+   
+}
+#UserWrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
